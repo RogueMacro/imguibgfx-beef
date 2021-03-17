@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="submodules">
+      <UniqueIdentifier>{48444C85-34FC-8DD2-9D03-672E89DA28C3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="submodules\imgui-beef">
+      <UniqueIdentifier>{3EAADCEA-AA16-98E5-730A-3043DF35BA4D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="submodules\imgui-beef\cimgui">
+      <UniqueIdentifier>{F81B3123-E4D6-20CF-8D8E-991979286B5F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="submodules\imgui-beef\cimgui\imgui">
+      <UniqueIdentifier>{AF6708D9-9BA3-0B43-04B6-233AF010B45D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="submodules\imgui-beef\cimgui\imgui\backends">
+      <UniqueIdentifier>{E6D31AED-5239-AE73-DB11-504C4776A3E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="csrc">
+      <UniqueIdentifier>{5051957C-3C88-960D-E574-7C10D18A120F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bgfx-beef">
+      <UniqueIdentifier>{CB7A415F-37E5-F5D5-8023-A77BECCCD32A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bgfx-beef\submodules">
+      <UniqueIdentifier>{4ACE0BBD-365D-9586-DF7B-A981CBE9A52C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bgfx-beef\submodules\bgfx">
+      <UniqueIdentifier>{CD9BF2D5-395E-2660-820E-B5ECEE0FFF3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bgfx-beef\submodules\bgfx\examples">
+      <UniqueIdentifier>{485DBD5A-3499-C0C4-9DAB-D8BB890669DF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bgfx-beef\submodules\bgfx\examples\common">
+      <UniqueIdentifier>{8D6BE939-F985-4CDB-42A8-5C6FAE0174E2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bgfx-beef\submodules\bgfx\examples\common\imgui">
+      <UniqueIdentifier>{04532520-708E-85E3-7983-0273E53D0A14}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\submodules\imgui-beef\cimgui\cimgui.h">
+      <Filter>submodules\imgui-beef\cimgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imconfig.h">
+      <Filter>submodules\imgui-beef\cimgui\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imgui.h">
+      <Filter>submodules\imgui-beef\cimgui\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imgui_internal.h">
+      <Filter>submodules\imgui-beef\cimgui\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imstb_rectpack.h">
+      <Filter>submodules\imgui-beef\cimgui\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imstb_textedit.h">
+      <Filter>submodules\imgui-beef\cimgui\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imstb_truetype.h">
+      <Filter>submodules\imgui-beef\cimgui\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\submodules\imgui-beef\cimgui\imgui\backends\imgui_impl_sdl.h">
+      <Filter>submodules\imgui-beef\cimgui\imgui\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\droidsans.ttf.h">
+      <Filter>bgfx-beef\submodules\bgfx\examples\common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\fs_imgui_color.bin.h">
+      <Filter>bgfx-beef\submodules\bgfx\examples\common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\fs_imgui_cubemap.bin.h">
+      <Filter>bgfx-beef\submodules\bgfx\examples\common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\fs_imgui_image.bin.h">
+      <Filter>bgfx-beef\submodules\bgfx\examples\common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\fs_imgui_image_swizz.bin.h">
+      <Filter>bgfx-beef\submodules\bgfx\examples\common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\fs_imgui_latlong.bin.h">
+      <Filter>bgfx-beef\submodules\bgfx\examples\common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\fs_imgui_texture.bin.h">
+      <Filter>bgfx-beef\submodules\bgfx\examples\common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\fs_ocornut_imgui.bin.h">
+      <Filter>bgfx-beef\submodules\bgfx\examples\common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\icons_font_awesome.ttf.h">
+      <Filter>bgfx-beef\submodules\bgfx\examples\common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\icons_kenney.ttf.h">
+      <Filter>bgfx-beef\submodules\bgfx\examples\common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\imgui.h">
+      <Filter>bgfx-beef\submodules\bgfx\examples\common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\robotomono_regular.ttf.h">
+      <Filter>bgfx-beef\submodules\bgfx\examples\common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\roboto_regular.ttf.h">
+      <Filter>bgfx-beef\submodules\bgfx\examples\common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\vs_imgui_color.bin.h">
+      <Filter>bgfx-beef\submodules\bgfx\examples\common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\vs_imgui_cubemap.bin.h">
+      <Filter>bgfx-beef\submodules\bgfx\examples\common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\vs_imgui_image.bin.h">
+      <Filter>bgfx-beef\submodules\bgfx\examples\common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\vs_imgui_latlong.bin.h">
+      <Filter>bgfx-beef\submodules\bgfx\examples\common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\vs_imgui_texture.bin.h">
+      <Filter>bgfx-beef\submodules\bgfx\examples\common\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\vs_ocornut_imgui.bin.h">
+      <Filter>bgfx-beef\submodules\bgfx\examples\common\imgui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\submodules\imgui-beef\cimgui\cimgui.cpp">
+      <Filter>submodules\imgui-beef\cimgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imgui.cpp">
+      <Filter>submodules\imgui-beef\cimgui\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imgui_demo.cpp">
+      <Filter>submodules\imgui-beef\cimgui\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imgui_draw.cpp">
+      <Filter>submodules\imgui-beef\cimgui\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imgui_tables.cpp">
+      <Filter>submodules\imgui-beef\cimgui\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imgui_widgets.cpp">
+      <Filter>submodules\imgui-beef\cimgui\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\submodules\imgui-beef\cimgui\imgui\backends\imgui_impl_sdl.cpp">
+      <Filter>submodules\imgui-beef\cimgui\imgui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\csrc\imguibgfx.cc">
+      <Filter>csrc</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

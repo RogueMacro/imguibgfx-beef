@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E7186C62-5383-20D9-9CC1-D17E086BFE2D}</ProjectGuid>
+    <RootNamespace>imguibgfx</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.10240.0</WindowsTargetPlatformMinVersion>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\win32_vs2019\bin\</OutDir>
+    <IntDir>..\..\win32_vs2019\obj\x32\Debug\</IntDir>
+    <TargetName>imguibgfxDebug</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\win64_vs2019\bin\</OutDir>
+    <IntDir>..\..\win64_vs2019\obj\x64\Debug\</IntDir>
+    <TargetName>imguibgfxDebug</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\win32_vs2019\bin\</OutDir>
+    <IntDir>..\..\win32_vs2019\obj\x32\Release\</IntDir>
+    <TargetName>imguibgfxRelease</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\win64_vs2019\bin\</OutDir>
+    <IntDir>..\..\win64_vs2019\obj\x64\Release\</IntDir>
+    <TargetName>imguibgfxRelease</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/wd4201 /wd4324 /Ob2  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\submodules\bx\include\compat\msvc;..\..\..\submodules\imgui-beef\cimgui\imgui;..\..\..\submodules\bx\include;..\..\..\submodules\imgui-beef\cimgui-deps\SDL2\include;..\..\..\submodules\imgui-beef\cimgui\imgui\backends;..\..\..\..\bgfx-beef\submodules\bgfx\include;..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;__STDC_CONSTANT_MACROS;_DEBUG;WIN32;_WIN32;_HAS_EXCEPTIONS=0;_SCL_SECURE=0;_SECURE_SCL=0;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;IMGUIBGFX_VIEWPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)imguibgfxDebug.pdb</ProgramDataBaseFileName>
+      <OmitFramePointers>true</OmitFramePointers>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;__STDC_CONSTANT_MACROS;_DEBUG;WIN32;_WIN32;_HAS_EXCEPTIONS=0;_SCL_SECURE=0;_SECURE_SCL=0;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;IMGUIBGFX_VIEWPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\submodules\bx\include\compat\msvc;..\..\..\submodules\imgui-beef\cimgui\imgui;..\..\..\submodules\bx\include;..\..\..\..\sdl2-beef\submodules\SDL\include;..\..\..\submodules\imgui-beef\cimgui\imgui\backends;..\..\..\..\bgfx-beef\submodules\bgfx\include;..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)imguibgfxDebug.lib</OutputFile>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)imguibgfxDebug.pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>/wd4201 /wd4324 /Ob2  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\submodules\bx\include\compat\msvc;..\..\..\submodules\imgui-beef\cimgui\imgui;..\..\..\submodules\bx\include;..\..\..\..\sdl2-beef\submodules\SDL\include;..\..\..\submodules\imgui-beef\cimgui\imgui\backends;..\..\..\..\bgfx-beef\submodules\bgfx\include;..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;__STDC_CONSTANT_MACROS;_DEBUG;WIN32;_WIN32;_HAS_EXCEPTIONS=0;_SCL_SECURE=0;_SECURE_SCL=0;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_WIN64;IMGUIBGFX_VIEWPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)imguibgfxDebug.pdb</ProgramDataBaseFileName>
+      <OmitFramePointers>true</OmitFramePointers>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;__STDC_CONSTANT_MACROS;_DEBUG;WIN32;_WIN32;_HAS_EXCEPTIONS=0;_SCL_SECURE=0;_SECURE_SCL=0;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_WIN64;IMGUIBGFX_VIEWPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\submodules\bx\include\compat\msvc;..\..\..\submodules\imgui-beef\cimgui\imgui;..\..\..\submodules\bx\include;..\..\..\..\sdl2-beef\submodules\SDL\include;..\..\..\submodules\imgui-beef\cimgui\imgui\backends;..\..\..\..\bgfx-beef\submodules\bgfx\include;..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)imguibgfxDebug.lib</OutputFile>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)imguibgfxDebug.pdb</ProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/wd4201 /wd4324 /Ob2  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\submodules\bx\include\compat\msvc;..\..\..\submodules\imgui-beef\cimgui\imgui;..\..\..\submodules\bx\include;..\..\..\..\sdl2-beef\submodules\SDL\include;..\..\..\submodules\imgui-beef\cimgui\imgui\backends;..\..\..\..\bgfx-beef\submodules\bgfx\include;..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;__STDC_CONSTANT_MACROS;NDEBUG;WIN32;_WIN32;_HAS_EXCEPTIONS=0;_SCL_SECURE=0;_SECURE_SCL=0;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;IMGUIBGFX_VIEWPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)imguibgfxRelease.pdb</ProgramDataBaseFileName>
+      <OmitFramePointers>true</OmitFramePointers>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;__STDC_CONSTANT_MACROS;NDEBUG;WIN32;_WIN32;_HAS_EXCEPTIONS=0;_SCL_SECURE=0;_SECURE_SCL=0;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;IMGUIBGFX_VIEWPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\submodules\bx\include\compat\msvc;..\..\..\submodules\imgui-beef\cimgui\imgui;..\..\..\submodules\bx\include;..\..\..\..\sdl2-beef\submodules\SDL\include;..\..\..\submodules\imgui-beef\cimgui\imgui\backends;..\..\..\..\bgfx-beef\submodules\bgfx\include;..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)imguibgfxRelease.lib</OutputFile>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)imguibgfxRelease.pdb</ProgramDatabaseFile>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>/wd4201 /wd4324 /Ob2  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\submodules\bx\include\compat\msvc;..\..\..\submodules\imgui-beef\cimgui\imgui;..\..\..\submodules\bx\include;..\..\..\..\sdl2-beef\submodules\SDL\include;..\..\..\submodules\imgui-beef\cimgui\imgui\backends;..\..\..\..\bgfx-beef\submodules\bgfx\include;..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;__STDC_CONSTANT_MACROS;NDEBUG;WIN32;_WIN32;_HAS_EXCEPTIONS=0;_SCL_SECURE=0;_SECURE_SCL=0;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_WIN64;IMGUIBGFX_VIEWPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)imguibgfxRelease.pdb</ProgramDataBaseFileName>
+      <OmitFramePointers>true</OmitFramePointers>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;__STDC_CONSTANT_MACROS;NDEBUG;WIN32;_WIN32;_HAS_EXCEPTIONS=0;_SCL_SECURE=0;_SECURE_SCL=0;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_WIN64;IMGUIBGFX_VIEWPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\submodules\bx\include\compat\msvc;..\..\..\submodules\imgui-beef\cimgui\imgui;..\..\..\submodules\bx\include;..\..\..\..\sdl2-beef\submodules\SDL\include;..\..\..\submodules\imgui-beef\cimgui\imgui\backends;..\..\..\..\bgfx-beef\submodules\bgfx\include;..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>$(OutDir)imguibgfxRelease.lib</OutputFile>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)imguibgfxRelease.pdb</ProgramDatabaseFile>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\submodules\imgui-beef\cimgui\cimgui.h" />
+    <ClInclude Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imconfig.h" />
+    <ClInclude Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imgui.h" />
+    <ClInclude Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imgui_internal.h" />
+    <ClInclude Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imstb_rectpack.h" />
+    <ClInclude Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imstb_textedit.h" />
+    <ClInclude Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imstb_truetype.h" />
+    <ClInclude Include="..\..\..\submodules\imgui-beef\cimgui\imgui\backends\imgui_impl_sdl.h" />
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\droidsans.ttf.h" />
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\fs_imgui_color.bin.h" />
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\fs_imgui_cubemap.bin.h" />
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\fs_imgui_image.bin.h" />
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\fs_imgui_image_swizz.bin.h" />
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\fs_imgui_latlong.bin.h" />
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\fs_imgui_texture.bin.h" />
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\fs_ocornut_imgui.bin.h" />
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\icons_font_awesome.ttf.h" />
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\icons_kenney.ttf.h" />
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\imgui.h" />
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\robotomono_regular.ttf.h" />
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\roboto_regular.ttf.h" />
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\vs_imgui_color.bin.h" />
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\vs_imgui_cubemap.bin.h" />
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\vs_imgui_image.bin.h" />
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\vs_imgui_latlong.bin.h" />
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\vs_imgui_texture.bin.h" />
+    <ClInclude Include="..\..\..\..\bgfx-beef\submodules\bgfx\examples\common\imgui\vs_ocornut_imgui.bin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\submodules\imgui-beef\cimgui\cimgui.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imgui.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imgui_demo.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imgui_draw.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imgui_tables.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\submodules\imgui-beef\cimgui\imgui\imgui_widgets.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\submodules\imgui-beef\cimgui\imgui\backends\imgui_impl_sdl.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\..\csrc\imguibgfx.cc">
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,4 +1,5 @@
-.build/
+.build/*
+!.build/projects/
 BeefSpace_User.toml
 build/
 recovery/
